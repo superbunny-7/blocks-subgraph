@@ -1,0 +1,17 @@
+{
+  "name": "locks-subgraph",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "create": "graph create --node https://graph-deploy.linea.build conflux/blocks-subgraph",
+    "remove": "graph remove --node https://graph-deploy.linea.build conflux/blocks-subgraph",
+    "deploy": "graph deploy --node https://graph-deploy.linea.build --ipfs https://graph-ipfs.linea.build --version-label 1.0.0 conflux/blocks-subgraph", 
+    "test": "graph test"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.59.0",
+    "@graphprotocol/graph-ts": "0.30.0"
+  },
+  "devDependencies": { "matchstick-as": "0.5.0" }
+}
