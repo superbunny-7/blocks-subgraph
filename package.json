@@ -1,12 +1,12 @@
 {
-  "name": "locks-subgraph",
+  "name": "blocks-subgraph",
   "license": "UNLICENSED",
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "create": "graph create --node https://graph-deploy.linea.build conflux/blocks-subgraph",
-    "remove": "graph remove --node https://graph-deploy.linea.build conflux/blocks-subgraph",
-    "deploy": "graph deploy --node https://graph-deploy.linea.build --ipfs https://graph-ipfs.linea.build --version-label 1.0.0 conflux/blocks-subgraph", 
+    "create": "graph create --node http://localhost:8020/ conflux/blocks-subgraph",
+    "remove": "graph remove --node http://localhost:8020/ conflux/blocks-subgraph",
+    "deploy": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:8020 --version-label 1.0.0 conflux/blocks-subgraph", 
     "test": "graph test"
   },
   "dependencies": {
