@@ -5,7 +5,7 @@ schema:
 dataSources:
   - kind: ethereum
     name: ConverterRegistryContract
-    network: conflux-eSpace
+    network: mainnet
     source:
       address: "0x786f4a44ce12b2b4b10edf26c4bb094457bee870"
       abi: ConverterRegistryContract
